@@ -18,20 +18,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Timer timer = new Timer();
-        TimerTask tTimer = new TimerTask() {
-            @Override
-            public void run() {
-                Intent login = new Intent(MainActivity.this, Login.class);
-                login.putExtra(AGE, 31);
-                startActivity(login);
-            }
-        }
-
-    }
-
-    public void passe(){
-
+        Intent login = new Intent(MainActivity.this, Login.class);
+        login.putExtra(AGE, 31);
+        startActivity(login);
     }
 }
