@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Vlearn</string>
+    <string name="app_name">vlearn_doz</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">Prenom</string>
+    <string name="matricule">Matricule</string>
+    <string name="password">Mot de passe</string>
+    <string name="confirmer">Confirmez</string>
+    <string name="btn_valider">VALIDER</string>
+    <string name="authentifier">AUTHENTIFIER</string>
+    <string name="se_loger">LOGIN</string>
+    <string name="inscription">INSCRIPTION</string>
 </resources>
