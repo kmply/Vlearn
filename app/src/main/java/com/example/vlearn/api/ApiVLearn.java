@@ -16,6 +16,7 @@ public class ApiVLearn {
     public static Retrofit getApiVLearn() {
 
         if (retrofit == null) {
+            //bonjour
             retrofit = new Retrofit.Builder().baseUrl(BASE_URL_VLEARN).
                     addConverterFactory(GsonConverterFactory.create()).build();
         }
