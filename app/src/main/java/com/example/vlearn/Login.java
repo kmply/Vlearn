@@ -14,6 +14,8 @@ import com.example.vlearn.api.ApiVLearn;
 import com.example.vlearn.api.ApiVLearnClient;
 import com.example.vlearn.model.User;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.List;
 
 import retrofit2.Call;
@@ -55,7 +57,7 @@ public class Login extends AppCompatActivity {
                         user = a;
                     Intent nextPage = new Intent(Login.this,Page_Main.class);
                     nextPage.putExtra("userInfo",user);
-                    startActivity();
+                    startActivity(nextPage);
 
                 }
             }
@@ -65,7 +67,7 @@ public class Login extends AppCompatActivity {
         int age = i.getIntExtra(AGE, 0);
 
         if (age != 0){
-            age = 2;
+
         }
     }
 
@@ -85,7 +87,7 @@ public class Login extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<List<User>> call, Throwable t) {
+            public void onFailure(@NotNull Call<List<User>> call, Throwable t) {
 
                 Toast.makeText(context,"Erreur 42 : "+t.getMessage(),Toast.LENGTH_LONG).show();
                 res = false;
