@@ -89,7 +89,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onFailure(@NotNull Call<List<User>> call, Throwable t) {
 
-                Toast.makeText(context,"Erreur 42 : "+t.getMessage(),Toast.LENGTH_LONG).show();
+                Toast.makeText(context,"Erreur Log 75 : "+t.getMessage(),Toast.LENGTH_LONG).show();
                 res = false;
             }
         });

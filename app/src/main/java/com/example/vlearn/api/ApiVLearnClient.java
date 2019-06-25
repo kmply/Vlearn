@@ -13,4 +13,10 @@ public interface ApiVLearnClient {
 
     @GET("login.php")
     Call<List<User>> getUserInfo(@Query("username") String username, @Query("password") String password);
+
+  //  @GET("inscription.php")
+
+
+
+
 }
