@@ -23,6 +23,7 @@
             android:contentDescription="@string/nom"
             />
         <android.support.design.widget.TextInputLayout
+            android:id="@+id/EditTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusable="true"
@@ -32,6 +33,7 @@
             >
 
             <android.support.design.widget.TextInputEditText
+                android:id="@+id/EditTextUsername"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
                 android:hint="@string/nom"
@@ -54,6 +56,7 @@
             android:contentDescription="@string/password"
             />
         <android.support.design.widget.TextInputLayout
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusable="true"
@@ -72,6 +75,7 @@
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
     <Button
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_valider"
