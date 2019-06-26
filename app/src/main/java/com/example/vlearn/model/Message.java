@@ -1,5 +1,19 @@
 package com.example.vlearn.model;
 
 public class Message {
-    String contenu = new String();
+
+    //c pas comme sa
+   //  String contenu = new String();
+
+     private String contenu ;
+
+
+
+    public String getContenu() {
+        return contenu;
+    }
+
+    public void setContenu(String contenu) {
+        this.contenu = contenu;
+    }
 }
