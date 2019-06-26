@@ -5,16 +5,16 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
 public class etablissement implements Serializable{
-    @SerializedName("id_etabliss");
+    @SerializedName("id_etabliss")
     private int id_etabliss;
-    @SerializedName("nom");
-    private String nom = new String();
-    @SerializedName("bp");
-    private String bp = new String();
-    @SerializedName("lieu");
-    private String lieu = new String();
-    @SerializedName("tel");
-    private String tel = new String();
+    @SerializedName("nom")
+    private String nom;
+    @SerializedName("bp")
+    private String bp;
+    @SerializedName("lieu")
+    private String lieu;
+    @SerializedName("tel")
+    private String tel;
 
     public etablissement(int id,String nom,String bp,String lieu,String tel){
         id_etabliss = id;
