@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">vlearn_doz</string>
+    <string name="app_name">vlearn</string>
     <string name="nom">Nom</string>
     <string name="prenom">Prenom</string>
     <string name="matricule">Matricule</string>
