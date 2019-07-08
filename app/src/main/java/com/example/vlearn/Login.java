@@ -4,6 +4,7 @@ package com.example.vlearn;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -27,7 +28,7 @@ import static com.example.vlearn.MainActivity.AGE;
 public class Login extends AppCompatActivity {
 
     Button btnLogin;
-    EditText username,password;
+    private TextInputLayout username,password;
     private ApiVLearnClient apiVLearnClient;
     private List<User> listUsers;
     boolean res;
@@ -45,8 +46,9 @@ public class Login extends AppCompatActivity {
         username = findViewById(R.id.EditTextUsername);
         password = findViewById(R.id.EditTextPassword);
 
-        usern = String.valueOf(username.getText());
-        pwd = String.valueOf(password.getText());
+        usern = String.valueOf(username.getEditText());
+        pwd = String.valueOf(password.getEditText());
+
         //attribution du listener sur le btnLogin
 
         btnLogin.setOnClickListener(new View.OnClickListener() {

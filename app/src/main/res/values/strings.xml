@@ -9,4 +9,6 @@
     <string name="authentifier">AUTHENTIFIER</string>
     <string name="se_loger">LOGIN</string>
     <string name="inscription">INSCRIPTION</string>
+    <string name="etablissement">Etablissement</string>
+    <string name="classe">Classe</string>
 </resources>

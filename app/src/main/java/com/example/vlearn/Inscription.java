@@ -14,7 +14,7 @@ public class Inscription extends AppCompatActivity {
     private TextInputLayout nom,prenom,matricule,password,confirm_pass;
     private Spinner etablissement,classe;
     Button btnInscription;
-    String notif = new String();
+    String notif;
 
 
     @Override

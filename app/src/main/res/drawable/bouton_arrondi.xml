@@ -5,7 +5,7 @@
         android:color="@color/couleur_btn"
         />
     <corners
-        android:radius="26dp"
+        android:radius="10dp"
         />
 
 </shape>
